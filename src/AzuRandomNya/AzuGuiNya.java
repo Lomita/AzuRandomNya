@@ -2,7 +2,6 @@ package AzuRandomNya;
 
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.ScrollPane;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Random;
@@ -151,9 +150,7 @@ public class AzuGuiNya extends JFrame implements ActionListener
 				values.setVisible(false);
 				
 				Random rand = new Random();
-				String value =(String) listModel.getElementAt(rand.nextInt(listModel.getSize()));
-				
-				valueNya.setText(value);
+				valueNya.setText(listModel.getElementAt(rand.nextInt(listModel.getSize())));
 				
 				nyanya.setVisible(true);
 				valueNya.setVisible(true);
